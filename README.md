@@ -4,12 +4,12 @@
 **Competition**: TikTok TechJam 2025, Track 1  
 **Objective**: Automatically classify location reviews as Valid, Advertisement, Irrelevant, or Not Visited with high accuracy (>90%) and transparency.
 
-This full-stack app uses a Flask backend with a BERT-based model and a ReactJS frontend for real-time review classification.
+This full-stack app uses a Flask backend with a BERT-based model and a ReactJS frontend (built with Vite) for real-time review classification.
 
 ## Project Structure
 
 - **backend/**: Flask API (`app.py`) for classification.
-- **frontend/**: ReactJS app for user interaction.
+- **frontend/**: ReactJS app (using Vite) for user interaction.
 - **saved_model/**: Model weights (`pytorch_model.bin`), `label_encoder.pkl`, `scaler.pkl`.
 - **data/**: ~6,400 balanced reviews (1,600 per class).
 
@@ -91,7 +91,7 @@ This full-stack app uses a Flask backend with a BERT-based model and a ReactJS f
 - **Metrics**: Accuracy (0.99375), Macro F1 (0.99375).
 
 ### Frontend
-- ReactJS, TailwindCSS, shadcn/ui.
+- ReactJS, TailwindCSS, shadcn/ui, built with Vite.
 - Features: Review input, classification display, optional SHAP visualizations.
 
 ## Outcomes
@@ -102,11 +102,11 @@ This full-stack app uses a Flask backend with a BERT-based model and a ReactJS f
 
 ## Technical Stack
 - **Backend**: Flask, PyTorch, Hugging Face Transformers, TextBlob, scikit-learn.
-- **Frontend**: ReactJS, TailwindCSS, shadcn/ui.
+- **Frontend**: ReactJS, TailwindCSS, Vite, shadcn/ui.
 - **APIs**: OpenAI o-mini-4.
 - **Tools**: Google Colab (GPU), VS Code, GitHub, GitHub Actions.
 
 ## Troubleshooting
 - **Backend**: Verify `saved_model` files, CUDA, dependencies.
-- **Frontend**: Check Node.js/npm, ensure backend is running.
+- **Frontend**: Check Node.js/npm and Vite are installed, ensure backend is running.
 - **Model**: Validate dataset balance, scaler compatibility.
