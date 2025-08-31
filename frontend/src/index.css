@@ -1,0 +1,72 @@
+/* Import font Waterfall từ Google Fonts (hoặc file local) */
+@import url('https://fonts.googleapis.com/css2?family=Waterfall&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Waterfall&display=swap');
+
+@import "tailwindcss";
+
+:root {
+  --tiktok-black: #000000;
+  --tiktok-pink: #EE1D52;
+  --tiktok-cyan: #69C9D0;
+  --tiktok-white: #FFFFFF;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--tiktok-black);
+  color: var(--tiktok-white);
+}
+
+.waterfall-font {
+  font-family: 'Waterfall', cursive;
+}
+
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8) translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.popup {
+  animation: popIn 0.4s ease-out forwards;
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.6s ease-in-out forwards;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--tiktok-black);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--tiktok-pink);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--tiktok-cyan);
+}

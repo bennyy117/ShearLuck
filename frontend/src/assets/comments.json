@@ -1,0 +1,21 @@
+{
+  "place1": [
+    {
+      "author": "Nguyen Van A",
+      "rating": 4,
+      "text": "Quán cà phê rất đẹp, không gian thoải mái!"
+    },
+    {
+      "author": "Tran Thi B",
+      "rating": 5,
+      "text": "Đồ uống ngon, nhân viên thân thiện."
+    }
+  ],
+  "place2": [
+    {
+      "author": "Le Van C",
+      "rating": 3,
+      "text": "Món ăn ổn, nhưng phục vụ hơi chậm."
+    }
+  ]
+}
