@@ -58,7 +58,7 @@ function DisplayResult() {
     return (
         <div className="flex flex-col items-center justify-center p-8 bg-[var(--tiktok-black)] min-h-screen text-center relative">
             <h1 className="text-4xl font-bold mb-6 bg-gradient-to-r from-[var(--tiktok-pink)] to-[var(--tiktok-cyan)] bg-clip-text text-transparent">
-                Find Truthful Reviews
+                Truthful Reviews Checker
             </h1>
 
             <div className="flex w-full max-w-3xl mb-6">

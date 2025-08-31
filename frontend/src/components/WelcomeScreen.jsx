@@ -29,7 +29,7 @@ function WelcomeScreen() {
       >
         Welcome to{' '}
         <span className="text-[var(--tiktok-black)] waterfall-font text-7xl md:text-[8rem]">
-          Sheares
+          ShearLuck
         </span>
       </h1>
 
