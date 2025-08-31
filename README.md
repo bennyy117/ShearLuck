@@ -76,7 +76,7 @@ This full-stack app uses a Flask backend with a BERT-based model and a ReactJS f
 ### Dataset
 - **Sources**: Hotel Reviews (2,700), Google Maps Restaurant Reviews (1,600), Advertisement Text (1,600), Deceptive Opinion Spam (400).
 - **Total**: 6,400 balanced reviews (1,600 per class).
-- **Labeling**: Manual + few-shot labeling (OpenAI o-mini-4 API).
+- **Labeling**: Manual + few-shot labeling.
 - **Preprocessing**: Drop missing/erroneous rows, lowercase text, standardize formats.
 
 ### Features
