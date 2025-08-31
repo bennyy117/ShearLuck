@@ -38,14 +38,14 @@ function MapScreen() {
   const fetchCommentsForPlace = (placeId) => {
     const data = {
       place1: [
-        { author: 'Bob', rating: 5, text: 'Rooms very comfortable Good location', label: 'VALID' },
-        { author: 'Alice', rating: 2, text: 'Stayed in same room several months ago reported bed was lumpy and extremely uncomfortable obviously the same mattress still Housekeeping was poor bits on floor lampshade still stained no bath robes', label: 'VALID' },
+        { author: 'Bob', rating: 5, text: 'Rooms very comfortable Good location', label: 'GOOD' },
+        { author: 'Alice', rating: 2, text: 'Stayed in same room several months ago reported bed was lumpy and extremely uncomfortable obviously the same mattress still Housekeeping was poor bits on floor lampshade still stained no bath robes', label: 'GOOD' },
         { author: 'Bob', rating: 5, text: 'Amazing promotion! Come and join us now!', label: 'ADVERTISEMENT' },
         { author: 'Charlie', rating: 5, text: 'Go to www.parkplaza.com to get best price!', label: 'ADVERTISEMENT' },
         { author: 'David', rating: 5, text: 'The location', label: 'IRRELEVANT' },
         { author: 'Ella', rating: 3, text: 'Maybe', label: 'IRRELEVANT' },
-        { author: 'Frank', rating: 5, text: 'I havent been there but my friend told me it was good', label: 'RANT WITHOUT VISIT' },
-        { author: 'Grace', rating: 4, text: 'Maybe it is beautiful', label: 'RANT WITHOUT VISIT' },
+        { author: 'Frank', rating: 5, text: 'I havent been there but my friend told me it was good', label: 'RANT' },
+        { author: 'Grace', rating: 4, text: 'Maybe it is beautiful', label: 'RANT' },
       ],
       place2: [
         { author: 'Eva', rating: 5, text: 'Amazing food!', label: 'GOOD' },
@@ -105,10 +105,10 @@ function MapScreen() {
               </button>
               <h2 className="text-3xl font-bold mb-6 text-[var(--tiktok-pink)] tracking-tight">{selectedPlace.name}</h2>
               <div className="flex gap-2 text-xs mb-4 text-white">
-                <CheckCircle className="w-4 h-4 text-green-400" /> GOOD
+                <CheckCircle className="w-4 h-4 text-green-400" /> VALID
                 <Megaphone className="w-4 h-4 text-yellow-400" /> ADVERTISEMENT
                 <Ban className="w-4 h-4 text-gray-400" /> IRRELEVANT
-                <Angry className="w-4 h-4 text-red-400" /> RANT
+                <Angry className="w-4 h-4 text-red-400" /> RANT WITHOUT VISIT
               </div>
               <CommentList comments={comments} />
             </div>
